@@ -13,10 +13,10 @@
       rel="stylesheet"
     />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/search.css" />
+    <link rel="stylesheet" href="css/root.css" />
     <!-- Scripts -->
     <script src="lib/jquery.min.js"></script>
-    <script src="js/search-by-reg.js" defer></script>
     <script src="js/api.js" defer></script>
     <script src="scripts.js" defer></script>
   </head>
@@ -27,7 +27,28 @@
           <input type="text" name="reg" placeholder="enter reg no." />
           <input type="submit" />
         </form>
+        <div class="notice">
+          <h3>Sandbox & Trial Restrictions</h3>
+          <ol>
+            <li>
+              Only registration numbers containing the letter <span>A</span> can
+              be searched
+            </li>
+            <li>All data is up to 12 months out of date</li>
+            <li>
+              Test using <span>KM12AKK, AG09AUJ, AF06 YRU</span> or anything
+              containing: A ( point 2. to be noted )
+            </li>
+          </ol>
+        </div>
         <div class="error-msg"></div>
+      </div>
+      <div id="root" class="content-root">
+        <h1>Full Vehicle VDI Check</h1>
+        <div class="report-details">
+          <span class="report-id"></span>
+          <span class="report-date"></span>
+        </div>
         <div id="generated_html"></div>
       </div>
     </main>

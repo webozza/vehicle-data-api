@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
+* {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+}
+body.home {
+  background: #000;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body.home.on-success {
+  height: initial;
+  overflow: initial;
+}
+
+.search_car_field input,
+#root form input {
+  background-color: rgba(0, 0, 0, 0.5);
+  outline: none;
+  border: 1px solid #fff;
+  padding: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  width: fit-content;
+  font-weight: 500;
+  color: #fff;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+input[type="submit"]:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.search_car_field {
+  text-align: center;
+}
+
+.error-msg {
+  color: red;
+  padding-top: 10px;
+}
+
+#generated_html {
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#generated_html > div {
+  line-height: 1.5em;
+  border: 1px solid rgba(255, 255, 255, 50%);
+  padding: 20px;
+}
+#generated_html > div > div {
+  text-align: left;
+}
+#generated_html span {
+  color: rgba(255, 255, 255, 1);
+}
+
+.notice {
+  color: rgba(255, 255, 255, 0.7);
+  padding: 30px;
+  margin-top: 50px;
+  box-shadow: 0 0 5px rgb(255 255 255 / 70%);
+  border-radius: 5px;
+}
+.notice span {
+  color: green;
+  font-weight: bold;
+}
+.notice li {
+  line-height: 1.5em;
+  text-align: left;
+}
